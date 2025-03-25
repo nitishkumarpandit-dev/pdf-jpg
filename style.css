@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #1a73e8;
+  margin-bottom: 2rem;
+}
+
+.converter-box {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.upload-area {
+  border: 2px dashed #1a73e8;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.upload-area:hover {
+  background: #f8f9fa;
+  border-color: #185abc;
+}
+
+.upload-icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+}
+
+.browse-btn {
+  background: #1a73e8;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+.browse-btn:hover {
+  background: #185abc;
+}
+
+.preview-area {
+  margin-top: 2rem;
+}
+
+.preview-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.preview-controls button {
+  background: #e8f0fe;
+  color: #1a73e8;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.preview-controls button:hover {
+  background: #d2e3fc;
+}
+
+#pdfCanvas {
+  max-width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.conversion-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+#quality {
+  padding: 0.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  outline: none;
+}
+
+.convert-btn {
+  background: #34a853;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.convert-btn:hover {
+  background: #2d8e47;
+}
+
+.dragover {
+  background: #e8f0fe;
+  border-color: #185abc;
+}

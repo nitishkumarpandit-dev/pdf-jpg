@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF to JPG Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>PDF to JPG Converter</h1>
+      <div class="converter-box" id="dropZone">
+        <div class="upload-area">
+          <img src="upload.svg" alt="Upload" class="upload-icon" />
+          <p>Drag & Drop your PDF here or</p>
+          <input type="file" id="fileInput" accept=".pdf" hidden />
+          <button
+            class="browse-btn"
+            onclick="document.getElementById('fileInput').click()"
+          >
+            Browse Files
+          </button>
+        </div>
+        <div class="preview-area" id="previewArea" hidden>
+          <div class="preview-controls">
+            <button id="prevPage">Previous</button>
+            <span id="pageInfo"
+              >Page <span id="currentPage">1</span> of
+              <span id="totalPages">1</span></span
+            >
+            <button id="nextPage">Next</button>
+          </div>
+          <canvas id="pdfCanvas"></canvas>
+          <div class="conversion-controls">
+            <label for="quality">Image Quality:</label>
+            <select id="quality">
+              <option value="1">High</option>
+              <option value="0.75">Medium</option>
+              <option value="0.5">Low</option>
+            </select>
+            <button id="convertBtn" class="convert-btn">Convert to JPG</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
