@@ -133,3 +133,130 @@ h1 {
   background: #e8f0fe;
   border-color: #185abc;
 }
+
+.zoom-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+.zoom-controls button {
+  background: #f1f3f4;
+  border: 1px solid #dadce0;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.zoom-controls button:hover {
+  background: #d2e3fc;
+}
+
+#zoomLevel {
+  min-width: 4rem;
+  text-align: center;
+}
+
+.theme-toggle {
+  text-align: right;
+  margin-top: 1rem;
+}
+
+#themeToggle {
+  background: #1a73e8;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#themeToggle:hover {
+  background: #185abc;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: #202124;
+  color: #e8eaed;
+}
+
+.dark-mode .converter-box {
+  background: #292a2d;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .upload-area {
+  border-color: #5f6368;
+}
+
+.dark-mode .preview-controls button,
+.dark-mode .zoom-controls button {
+  background: #3c4043;
+  border-color: #5f6368;
+  color: #e8eaed;
+}
+
+.dark-mode #quality {
+  background: #3c4043;
+  border-color: #5f6368;
+  color: #e8eaed;
+}
+
+.dark-mode #pdfCanvas {
+  border-color: #5f6368;
+}
+
+#batchConvertBtn {
+  background: #fbbc04;
+  margin-left: 0.5rem;
+}
+
+#batchConvertBtn:hover {
+  background: #f29900;
+}
+
+.control-group {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.control-group label {
+  min-width: 120px;
+}
+
+.control-group input[type="range"],
+.control-group select,
+.control-group input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.control-group input[type="text"] {
+  width: 100%;
+}
+
+.image-controls {
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+
+.dark-mode .image-controls {
+  background: #3c4043;
+}
+
+.dark-mode .control-group input[type="range"],
+.dark-mode .control-group select,
+.dark-mode .control-group input[type="text"] {
+  background: #3c4043;
+  border-color: #5f6368;
+  color: #e8eaed;
+}
