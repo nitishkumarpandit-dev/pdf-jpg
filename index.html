@@ -32,62 +32,13 @@
           </div>
           <canvas id="pdfCanvas"></canvas>
           <div class="conversion-controls">
-            <div class="control-group">
-              <label for="quality">Image Quality:</label>
-              <select id="quality">
-                <option value="1">High</option>
-                <option value="0.75">Medium</option>
-                <option value="0.5">Low</option>
-              </select>
-            </div>
-            <div class="control-group">
-              <label for="format">Format:</label>
-              <select id="format">
-                <option value="image/jpeg">JPG</option>
-                <option value="image/png">PNG</option>
-                <option value="image/webp">WEBP</option>
-              </select>
-            </div>
-            <div class="image-controls">
-              <div class="control-group">
-                <label for="brightness">Brightness:</label>
-                <input
-                  type="range"
-                  id="brightness"
-                  min="-100"
-                  max="100"
-                  value="0"
-                />
-              </div>
-              <div class="control-group">
-                <label for="contrast">Contrast:</label>
-                <input
-                  type="range"
-                  id="contrast"
-                  min="-100"
-                  max="100"
-                  value="0"
-                />
-              </div>
-              <div class="control-group">
-                <label for="rotation">Rotation:</label>
-                <select id="rotation">
-                  <option value="0">0°</option>
-                  <option value="90">90°</option>
-                  <option value="180">180°</option>
-                  <option value="270">270°</option>
-                </select>
-              </div>
-              <div class="control-group">
-                <label for="watermark">Watermark Text:</label>
-                <input
-                  type="text"
-                  id="watermark"
-                  placeholder="Enter watermark text"
-                />
-              </div>
-            </div>
-            <button id="convertBtn" class="convert-btn">Convert Image</button>
+            <label for="quality">Image Quality:</label>
+            <select id="quality">
+              <option value="1">High</option>
+              <option value="0.75">Medium</option>
+              <option value="0.5">Low</option>
+            </select>
+            <button id="convertBtn" class="convert-btn">Convert to JPG</button>
           </div>
         </div>
       </div>
