@@ -42,7 +42,6 @@ A web-based application that allows users to convert PDF files to various image 
 ## Technical Details
 
 The application uses:
-
 - PDF.js for PDF rendering
 - HTML5 Canvas API for image processing
 - Native JavaScript for file handling and UI interactions
